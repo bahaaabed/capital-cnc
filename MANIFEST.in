@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include capital_cnc *.css
+recursive-include capital_cnc *.csv
+recursive-include capital_cnc *.html
+recursive-include capital_cnc *.ico
+recursive-include capital_cnc *.js
+recursive-include capital_cnc *.json
+recursive-include capital_cnc *.md
+recursive-include capital_cnc *.png
+recursive-include capital_cnc *.py
+recursive-include capital_cnc *.svg
+recursive-include capital_cnc *.txt
+recursive-exclude capital_cnc *.pyc
