@@ -181,3 +181,17 @@ user_data_fields = [
 # 	"capital_cnc.auth.validate"
 # ]
 
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["name", "in", [
+				"Journal Entry Account-vlaue",
+				"Journal Entry Account-debit_or_credit",
+				"Journal Entry Account-select_currancy",
+				"Journal Entry Account-exchange_rate_cap",
+			]
+			]
+		]
+	}
+]
