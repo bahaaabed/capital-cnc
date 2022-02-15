@@ -38,8 +38,8 @@ def get_columns():
 		{
 			'fieldname': 'select_currancy',
 			'label': ('Currancy'),
-			'fieldtype': 'Currency',
-			'options': 'currency',
+			'fieldtype': 'Data',
+			'options': 'Data',
 			"width": 150
 		},
 		{
