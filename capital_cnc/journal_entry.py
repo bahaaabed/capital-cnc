@@ -1,5 +1,4 @@
 import erpnext
-from erpnext.accounts.doctype.journal_entry.journal_entry import get_exchange_rate
 from frappe.model.document import Document
 import frappe
 from frappe.utils.data import flt
