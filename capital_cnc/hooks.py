@@ -86,10 +86,9 @@ app_license = "MIT"
 # DocType Class
 # ---------------
 # Override standard doctype classes
-
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+	"Journal Entry": "capital_cnc.override"
+}
 
 # Document Events
 # ---------------
@@ -134,9 +133,9 @@ doc_events = {
 # Overriding Methods
 # ------------------------------
 #
-# override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "capital_cnc.event.get_events"
-# }
+override_whitelisted_methods = {
+	"erpnext.accounts.doctype.journal_entry.journal_entry.get_exchange_rate": "capital_cnc.journal_entry.get_exchange_rate"
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,

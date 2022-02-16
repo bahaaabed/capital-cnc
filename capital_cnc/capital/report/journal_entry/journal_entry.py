@@ -43,6 +43,13 @@ def get_columns():
 			"width": 150
 		},
 		{
+			'fieldname': 'original_amount',
+			'label': ('Original Amount'),
+			'fieldtype': 'Data',
+			'options': 'Data',
+			"width": 150
+		},
+		{
 			'fieldname': 'debit_or_credit',
 			'label': ('Debit or Credit'),
 			'fieldtype': 'Data',
@@ -70,14 +77,6 @@ def get_columns():
 		}]
 	return columns
 
-# def get_conditions(filters):
-# 	conditions = ""
-
-# 	if filters.get("from_date"): conditions += "creation >=%(from_date)s"
-# 	if filters.get("to_date"): conditions += " and creation <=%(to_date)s"
-
-# 	return conditions
-
 def get_entries(filters):
 	data = []
 	filters['from_date'] = filters.get('from_date')
@@ -88,6 +87,7 @@ def get_entries(filters):
 	jea.account,
 	jea.balance,
 	jea.select_currancy,
+	jea.vlaue,
 	jea.debit_or_credit,
 	jea.debit_in_account_currency,
 	jea.credit_in_account_currency,
