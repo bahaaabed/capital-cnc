@@ -86,9 +86,9 @@ app_license = "MIT"
 # DocType Class
 # ---------------
 # Override standard doctype classes
-override_doctype_class = {
-	"Journal Entry": "capital_cnc.override"
-}
+# override_doctype_class = {
+# 	"Journal Entry": "capital_cnc.override"
+# }
 
 # Document Events
 # ---------------
