@@ -18,6 +18,9 @@ def get_exchange_rate(posting_date, account=None, account_currency=None, company
 
 	# if not company:
 	# 	company = account_details.company
+	
+	# if select_currancy != account_currency :
+	# 	print("TESSSSSST")
 
 	# if not account_currency:
 	# 	account_currency = account_details.account_currency
