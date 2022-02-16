@@ -135,7 +135,7 @@ doc_events = {
 #
 
 override_whitelisted_methods = {
-	"erpnext.accounts.doctype.journal_entry.journal_entry.get_exchange_rate": "capital_cnc.capital_cnc.journal_entry.get_exchange_rate"
+	"capital_cnc.capital_cnc.journal_entry.get_exchange_rate": "erpnext.erpnext.accounts.doctype.journal_entry.journal_entry.get_exchange_rate"
 }
 #
 # each overriding function accepts a `data` argument;
