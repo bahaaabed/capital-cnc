@@ -193,6 +193,9 @@ fixtures = [
 				"Journal Entry Account-debit_or_credit",
 				"Journal Entry Account-select_currancy",
 				"Journal Entry Account-exchange_rate_cap",
+
+				"Customer-qr_code",
+				"Customer-qr",
 			]
 			]
 		]

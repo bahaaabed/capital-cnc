@@ -6,7 +6,6 @@ from pyqrcode import create as qrcreate
 @frappe.whitelist()
 def qrcode(doc,methode):
     file_output_name = doc.name
-
     doctype = "Customer"
     docname = doc.name
     filename = 'QRCode_{}.png'.format(docname).replace(os.path.sep, "__")
@@ -24,3 +23,4 @@ def qrcode(doc,methode):
     _file.save()
     frappe.db.commit()
     doc.qr = _file.file_url
+
