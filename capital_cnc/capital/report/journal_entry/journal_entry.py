@@ -74,7 +74,14 @@ def get_columns():
 			'label': ('Party Type'),
 			'fieldtype': 'Data',
 			"width": 150
-		}]
+		},
+		{
+			'fieldname': 'party',
+			'label': ('Party'),
+			'fieldtype': 'Data',
+			"width": 150
+		}
+		]
 	return columns
 
 def get_entries(filters):
@@ -91,6 +98,7 @@ def get_entries(filters):
 	jea.debit_or_credit,
 	jea.debit_in_account_currency,
 	jea.credit_in_account_currency,
+	party,
 	jea.party_type
 	from `tabJournal Entry` je
 	LEFT JOIN `tabJournal Entry Account` jea
