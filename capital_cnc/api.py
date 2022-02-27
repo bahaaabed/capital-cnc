@@ -24,4 +24,3 @@ def qrcode(doc,methode):
     frappe.db.commit()
     doc.qr = _file.file_url
     frappe.sendmail(recipients = doc.owner, subject = "Products Page", message = f'https://capital-cnc.frappe.cloud{doc.qr}')
-
