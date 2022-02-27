@@ -94,9 +94,6 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 doc_events = {
-	"Employee": {
-		"on_update": "capital_cnc.api.test"
-	},
 	"Customer": {
 		"validate": "capital_cnc.api.qrcode"
 	}

@@ -6,7 +6,6 @@ from frappe.utils.background_jobs import enqueue
 
 @frappe.whitelist()
 def qrcode(doc,methode):
-    file_output_name = doc.name
     doctype = "Customer"
     docname = doc.name
     filename = 'QRCode_{}.png'.format(docname).replace(os.path.sep, "__")
@@ -25,17 +24,4 @@ def qrcode(doc,methode):
     frappe.db.commit()
     doc.qr = _file.file_url
     frappe.sendmail(recipients = doc.owner, subject = "Products Page", message = f'https://capital-cnc.frappe.cloud{doc.qr}')
-
-# def send_email(self, recipients ,sender= None, msg = 'tset', subject= 'test'):
-#         """send email with payment link"""
-#         email_args = {
-#             "recipients": self.email_to,
-#             "sender": None,
-#             "subject": self.subject,
-#             "message": self.get_message(),
-#             "now": True,
-#             "attachments": [frappe.attach_print(self.reference_doctype, self.reference_name,
-#                 file_name=self.reference_name, print_format=self.print_format)]}
-#         enqueue(method=frappe.sendmail, queue='short', timeout=300, is_async=True, **email_args)
-
 
